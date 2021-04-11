@@ -4,17 +4,17 @@ Fulfill the below user stories and get all of the tests to pass. Give it your ow
 
 You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS. You can use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular, or Vue) are not recommended for this project, and using them is at your own risk. Other projects will give you a chance to work with different technology stacks like React. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!
 
-User Story #1: My portfolio should have a welcome section with an id of welcome-section.
+User Story #1: My portfolio should have a welcome section with an id of welcome-section.<!--done-->
 
-User Story #2: The welcome section should have an h1 element that contains text.
+User Story #2: The welcome section should have an h1 element that contains text.<!--done-->
 
-User Story #3: My portfolio should have a projects section with an id of projects.
+User Story #3: My portfolio should have a projects section with an id of projects.<!--done-->
 
-User Story #4: The projects section should contain at least one element with a class of project-tile to hold a project.
+User Story #4: The projects section should contain at least one element with a class of project-tile to hold a project.<!--done-->
 
 User Story #5: The projects section should contain at least one link to a project.
 
-User Story #6: My portfolio should have a navbar with an id of navbar.
+User Story #6: My portfolio should have a navbar with an id of navbar.<!--done-->
 
 User Story #7: The navbar should contain at least one link that I can click on to navigate to different sections of the page.
 
