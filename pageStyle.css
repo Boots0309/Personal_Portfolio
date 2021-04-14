@@ -20,3 +20,27 @@ img {
     margin: auto;
 
 }
+
+header {
+    margin: 0;
+}
+
+#navbar {
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    #navbar {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        margin: 10px 10px;
+    }
+    a{
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.2em;
+        color: #000;
+        margin: 10px;
+    }
+}
