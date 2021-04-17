@@ -4,11 +4,43 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+header {
+    margin: 0;
+    height: 30px;
+    padding: 5px;
+    background-color: cadetblue;
+}
+
+#navbar {
+    display: none;
+}
+
+.openbtn {
+    font-size: 30px;
+    width: 100%;
+    position: absolute;
+    padding: 0 0 0 10px;
+    /* background-color: lawngreen; */
+    cursor: pointer;
+}
+
+#welcome-section {
+    width: 100%;
+    height: 650px;
+    background-color: cadetblue;
+    font-size: 4vw;
+    padding: 50px;
+}
+
+#welcome-section > h1 {
+    margin-top: 100px;
+}
+
+
 .project-tile {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: 300px;
-    background-color: aquamarine;
     font-size: 1.5rem;
     text-align: center;
     border: 2px solid #000;
@@ -21,26 +53,49 @@ img {
 
 }
 
-header {
-    margin: 0;
-}
-
-#navbar {
-    display: none;
-}
-
 @media (min-width: 1200px) {
     #navbar {
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-end;
-        margin: 10px 10px;
+        /* max-width: 100%; */
     }
+    
+    .openbtn {
+        display: none;
+    }
+
+    .closebtn {
+        display: none;
+    }
+
     a{
         text-decoration: none;
         text-align: center;
         font-size: 1.2em;
         color: #000;
         margin: 10px;
+        padding: 0 15px;
+    }
+
+    a:hover {
+        background-color: gray;
+        border-radius: 5px;
+    }
+
+    #welcome-section {
+        width: 100%;
+        height: 650px;
+        font-size: 3vw;
+        text-align: center;
+        padding: 50px;
+    }
+
+    .project-tile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 20px;
     }
 }
