@@ -15,15 +15,46 @@ header {
     display: none;
 }
 
+/* for side navigation w/o animation */
 .openbtn {
     font-size: 30px;
     width: 100%;
     position: absolute;
     padding: 0 0 0 10px;
-    /* background-color: lawngreen; */
     cursor: pointer;
 }
 
+.sidenav {
+    display: none;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  } 
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+
+/* welcome section */
 #welcome-section {
     width: 100%;
     height: 650px;
@@ -54,13 +85,13 @@ img {
 }
 
 @media (min-width: 1200px) {
-    #navbar {
+    #navbar  {
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-end;
-        /* max-width: 100%; */
+
     }
-    
+
     .openbtn {
         display: none;
     }
