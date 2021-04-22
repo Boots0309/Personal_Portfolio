@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: sans-serif;
 }
 
 header {
@@ -13,46 +13,7 @@ header {
 
 #navbar {
     display: none;
-}
-
-/* for side navigation w/o animation */
-.openbtn {
-    font-size: 30px;
-    width: 100%;
-    position: absolute;
-    padding: 0 0 0 10px;
-    cursor: pointer;
-}
-
-.sidenav {
-    display: none;
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 60px;
-  }
-
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-  } 
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
+}  
 
 /* welcome section */
 #welcome-section {
@@ -84,45 +45,52 @@ img {
 
 }
 
+#profile-link {
+    max-width: 100%;
+    text-align: center;
+    line-height: 2.5em;
+    background-color: hsl(219, 79%, 66%);
+    
+}
+
+#profile-link > a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 40px;
+    color: hsl(0, 0%, 0%)
+}
+
+#profile-link > a:hover {
+    color: cornflowerblue;
+}
+
 @media (min-width: 1200px) {
     #navbar  {
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-end;
-
-    }
-/* these breaks the display when opening the sidebar from small screen to wide screen w/o
-clicking the "closeNav" */
-    .sidenav {
-        display: flex;
-        position: relative;
+        align-items: center;
+        position: fixed;
+        top: 0;
         width: 100%;
-        height: auto;
+        height: 50px;
         background-color: cadetblue;
         color: #000;
     }
 
-    .openbtn {
-        display: none;
-    }
-
-    .sidenav .closebtn {
-        display: none;
-    }
-
-/* tried selecting <a> element through its class */
-    .sidenav > a{
+    #navbar > a{
         text-decoration: none;
         text-align: center;
         font-size: 1.2em;
         color: #000;
+        width: 130px;
         margin: 0 10px 0 10px;
-        padding: 0 15px;
+        padding: 5px 15px;
     }
 
-    a:hover {
+    #navbar > a:hover {
         background-color: gray;
-        border-radius: 5px;
+        border-radius: 2px;
     }
 
     #welcome-section {
@@ -139,5 +107,23 @@ clicking the "closeNav" */
         justify-content: center;
         align-items: center;
         margin: 10px 20px;
+    }
+
+    #profile-link {
+        max-width: 100%;
+        text-align: center;
+        line-height: 2.5em;
+        
+    }
+
+    #profile-link > a {
+        padding: 10px;
+        text-decoration: none;
+        font-size: 40px;
+        color: hsl(0, 0%, 0%)
+    }
+    
+    #profile-link > a:hover {
+        color: rgb(89, 95, 107);
     }
 }
