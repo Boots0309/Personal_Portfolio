@@ -8,7 +8,7 @@ header {
     margin: 0;
     height: 30px;
     padding: 5px;
-    background-color: cadetblue;
+    background-color: hsl(182, 25%, 50%);
 }
 
 #navbar {
@@ -19,7 +19,7 @@ header {
 #welcome-section {
     width: 100%;
     height: 650px;
-    background-color: cadetblue;
+    background-color: hsl(182, 25%, 50%);
     font-size: 4vw;
     padding: 50px;
 }
@@ -35,7 +35,7 @@ header {
     height: 300px;
     font-size: 1.5rem;
     text-align: center;
-    border: 2px solid #000;
+    border: 2px solid hsl(0, 0%, 0%);
     margin: 10px 5px;
 }
 
@@ -61,7 +61,7 @@ img {
 }
 
 #profile-link > a:hover {
-    color: cornflowerblue;
+    color: hsl(220, 9%, 38%);
 }
 
 @media (min-width: 1200px) {
@@ -74,22 +74,22 @@ img {
         top: 0;
         width: 100%;
         height: 50px;
-        background-color: cadetblue;
-        color: #000;
+        background-color: hsl(182, 25%, 50%);
+        color: hsl(0, 0%, 0%);
     }
 
     #navbar > a{
         text-decoration: none;
         text-align: center;
         font-size: 1.2em;
-        color: #000;
+        color: hsl(0, 0%, 0%);
         width: 130px;
         margin: 0 10px 0 10px;
         padding: 5px 15px;
     }
 
     #navbar > a:hover {
-        background-color: gray;
+        background-color: hsl(0, 0%, 50%);
         border-radius: 2px;
     }
 
@@ -124,6 +124,6 @@ img {
     }
     
     #profile-link > a:hover {
-        color: rgb(89, 95, 107);
+        color: hsl(220, 9%, 38%);
     }
 }
