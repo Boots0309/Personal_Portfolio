@@ -11,9 +11,9 @@ header {
     background-color: hsl(182, 25%, 50%);
 }
 
-#navbar {
+/* #navbar {
     display: none;
-}  
+}   */
 
 /* welcome section */
 #welcome-section {
@@ -64,7 +64,7 @@ img {
     color: hsl(220, 9%, 38%);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 300px) and (max-width: 1500px) {
     #navbar  {
         display: flex;
         flex-flow: row wrap;
@@ -129,3 +129,9 @@ img {
 
 }
 
+@media screen and (min-width: 300px) {
+    #navbar {
+        justify-content: flex-start;
+    }
+    
+}
