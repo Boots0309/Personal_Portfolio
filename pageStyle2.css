@@ -11,10 +11,29 @@ body {
 }
 
 #projects > p {
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 2vw;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#profile-link {
+    width: 100%;
+    text-align: center;
+    margin: 100px auto;
+}
+
+#profile-link > p {
+    font-size: 20px;
+}
+
+#profile-link > a {
+    font-size: 50px;
+    padding: 10px;
+    color: hsl(0, 0%, 0%);
+}
+
+#profile-link > a:hover {
+    color: darkcyan;
 }
 
 @media (min-width: 1200px) {
